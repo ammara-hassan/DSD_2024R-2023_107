@@ -24,17 +24,16 @@ module lab3(
 input logic a,b,c,
 output logic x,y
 );
-   logic and_out;
-   logic or_out1, or_out2;
+   logic or_out;
     logic nand_out;
     logic not_out;
-    logic xor_out1,xor_or2;
+    logic xor_or;
     
     
-   assign or_out1 = a | b;
+   assign or_out = a | b;
    assign nand_out = ~(a & b);
-   assign x = ~c ^ or_out1; 
-   assign xor_out2 = nand_out ^ a | b;
-   assign y = or_out1 & xor_out2;
+   assign x = ~c ^ or_out; 
+   assign xor_out = nand_out ^ a | b;
+   assign y = or_out & xor_out;
  
 endmodule
