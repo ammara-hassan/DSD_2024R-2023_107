@@ -26,8 +26,7 @@ output logic x,y
 );
    logic or_out;
     logic nand_out;
-    logic not_out;
-    logic xor_or;
+    logic xor_out;
     
     
    assign or_out = a | b;
